@@ -35,6 +35,13 @@ A marketing website for a software development business, built with **Next.js 14
 - `npm run start` – Start production server
 - `npm run lint` – Run ESLint
 
+## 页面截图
+
+![screenshots](./screenshot_1.png)
+
+![screenshots](./screenshot_2.png)
+
+
 ## Customization
 
 - **Brand name**: Search for "Zhiyuan" in `app/layout.tsx`, `components/Header.tsx`, `components/Footer.tsx`, and metadata.
