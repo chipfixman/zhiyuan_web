@@ -1,26 +1,33 @@
-import Link from "next/link";
+"use client";
 
-const footerLinks = {
-  Services: [
-    { label: "Web Applications", href: "#services" },
-    { label: "Mobile Apps", href: "#services" },
-    { label: "API & Integrations", href: "#services" },
-    { label: "Consulting", href: "#services" },
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+
+const footerStructure = {
+  services: [
+    { labelKey: "webApps", href: "#services" },
+    { labelKey: "mobileApps", href: "#services" },
+    { labelKey: "apiIntegrations", href: "#services" },
+    { labelKey: "consulting", href: "#services" },
   ],
-  Company: [
-    { label: "About", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Contact", href: "#contact" },
+  company: [
+    { labelKey: "about", href: "#" },
+    { labelKey: "careers", href: "#" },
+    { labelKey: "contact", href: "#contact" },
   ],
-  Resources: [
-    { label: "Blog", href: "#" },
-    { label: "Case Studies", href: "#solutions" },
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
+  resources: [
+    { labelKey: "blog", href: "#" },
+    { labelKey: "caseStudies", href: "#solutions" },
+    { labelKey: "privacyPolicy", href: "#" },
+    { labelKey: "termsOfService", href: "#" },
   ],
-};
+} as const;
+
+const sectionKeys = ["services", "company", "resources"] as const;
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
   return (
     <footer className="bg-slate-900 text-slate-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -29,18 +36,19 @@ export default function Footer() {
             <Link href="/" className="text-xl font-bold text-white">
               Zhiyuan
             </Link>
-            <p className="mt-3 text-sm text-slate-400 max-w-xs">
-              Software development that scales. Web, mobile, APIs, and consulting.
-            </p>
+            <p className="mt-3 text-sm text-slate-400 max-w-xs">{t("tagline")}</p>
           </div>
-          {Object.entries(footerLinks).map(([heading, links]) => (
-            <div key={heading}>
-              <h3 className="font-semibold text-white">{heading}</h3>
+          {sectionKeys.map((sectionKey) => (
+            <div key={sectionKey}>
+              <h3 className="font-semibold text-white">{t(sectionKey)}</h3>
               <ul className="mt-4 space-y-2">
-                {links.map((link) => (
-                  <li key={link.label}>
-                    <Link href={link.href} className="text-sm hover:text-white transition-colors">
-                      {link.label}
+                {footerStructure[sectionKey].map((link) => (
+                  <li key={link.labelKey}>
+                    <Link
+                      href={link.href}
+                      className="text-sm hover:text-white transition-colors"
+                    >
+                      {t(link.labelKey)}
                     </Link>
                   </li>
                 ))}
@@ -49,9 +57,14 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-slate-500">© {new Date().getFullYear()} Zhiyuan. All rights reserved.</p>
+          <p className="text-sm text-slate-500">
+            {t("copyright", { year: new Date().getFullYear() })}
+          </p>
           <div className="flex gap-6">
-            <a href="mailto:hello@zhiyuan.dev" className="text-sm hover:text-white transition-colors">
+            <a
+              href="mailto:hello@zhiyuan.dev"
+              className="text-sm hover:text-white transition-colors"
+            >
               hello@zhiyuan.dev
             </a>
           </div>

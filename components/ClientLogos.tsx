@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 const logos = [
   "TechFlow",
   "RetailOS",
@@ -8,11 +12,13 @@ const logos = [
 ];
 
 export default function ClientLogos() {
+  const t = useTranslations("clientLogos");
+
   return (
     <section className="py-16 lg:py-20 bg-white border-y border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-slate-500 font-medium mb-10">
-          Trusted by product teams and enterprises
+          {t("heading")}
         </p>
         <div className="flex flex-wrap justify-center items-center gap-12 lg:gap-16">
           {logos.map((name) => (

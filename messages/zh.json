@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "services": "服务",
+    "solutions": "解决方案",
+    "testimonials": "客户评价",
+    "contact": "联系我们",
+    "startProject": "开始项目",
+    "toggleMenu": "打开菜单"
+  },
+  "hero": {
+    "badge": "软件开发",
+    "title": "告别繁琐，专注创新。",
+    "specs": "需求清晰。",
+    "code": "代码优质。",
+    "delivery": "按时交付。",
+    "subtitle": "快速启动您的产品。我们构建可扩展的 Web 与移动应用，让您专注业务发展。",
+    "startProject": "开始项目",
+    "seeWork": "查看案例"
+  },
+  "valueProps": {
+    "heading": "一支团队，端到端交付。",
+    "subheading": "我们帮助初创企业与大型企业以最小摩擦、最优结果构建软件。",
+    "time": "效率",
+    "timeDesc": "凭借成熟流程与可复用架构更快交付。我们化繁为简，助您更快进入市场。",
+    "quality": "质量",
+    "qualityDesc": "清晰可维护的代码与扎实的测试。我们为长期而建，让产品随规模增长依然稳定可靠。",
+    "partnership": "合作",
+    "partnershipDesc": "与理解您目标的团队协作。沟通清晰、时间透明、没有意外。"
+  },
+  "features": {
+    "heading": "一支团队，一套流程",
+    "subheading": "从概念到上线，我们用现代工具与清晰沟通，让您的产品落地。",
+    "ideaTitle": "从想法到上线，一站完成",
+    "ideaDesc": "我们负责需求、设计、开发与部署。流程将您的需求转化为可用的产品，无需多方对接。",
+    "stackTitle": "现代技术栈，面向未来",
+    "stackDesc": "React、Next.js、Node、TypeScript 与云原生基础设施。我们使用可扩展、可维护的技术，避免遗留包袱。",
+    "transparentTitle": "时间与范围透明",
+    "transparentDesc": "清晰的里程碑、定期演示与可选固定范围。您随时清楚当前进度、下一步与上线时间。",
+    "supportTitle": "上线后的支持与迭代",
+    "supportDesc": "上线后支持、缺陷修复与功能迭代。我们持续参与，让产品持续改进而无需推倒重来。"
+  },
+  "services": {
+    "heading": "端到端软件解决方案",
+    "subheading": "我们将设计、开发与交付整合在一起，助您更快上线、更有信心地扩展。",
+    "webTitle": "Web 应用",
+    "webDesc": "基于 React、Next.js 与 Node 的全栈 Web 应用。从仪表盘到电商，我们构建快速、可扩展的产品。",
+    "mobileTitle": "移动应用",
+    "mobileDesc": "面向 iOS 与 Android 的原生与跨平台应用。以用户为中心的设计与稳定的后端集成。",
+    "apiTitle": "API 与集成",
+    "apiDesc": "REST 与 GraphQL API、第三方集成与系统对接。安全可靠、文档完善。",
+    "consultingTitle": "技术咨询",
+    "consultingDesc": "架构评审、技术尽调与路线图规划。在动手之前理清方向。",
+    "mvpTitle": "MVP 与原型",
+    "mvpDesc": "在数周内将想法变成可用的 MVP。用真实用户验证，自信迭代。",
+    "maintenanceTitle": "维护与支持",
+    "maintenanceDesc": "持续支持、安全更新与功能增强。让产品保持健康、持续进化。",
+    "getQuote": "获取报价",
+    "learnMore": "了解更多"
+  },
+  "solutions": {
+    "heading": "适配您的工作方式",
+    "subheading": "无论您是初创、产品团队还是企业，我们都会适应您的场景并交付成果。",
+    "startupsTitle": "初创与 MVP",
+    "startupsDesc": "从想法到首次发布。我们构建 MVP 与早期产品，助您快速验证与迭代。",
+    "teamsTitle": "产品团队",
+    "teamsDesc": "用资深工程师扩展团队。我们融入您的流程，在您的技术栈上交付功能。",
+    "enterpriseTitle": "企业",
+    "enterpriseDesc": "遗留系统现代化、集成与新系统。我们满足您的安全与合规要求。",
+    "learnMore": "了解更多"
+  },
+  "testimonials": {
+    "heading": "深受产品团队信赖",
+    "subheading": "听听创始人与技术负责人如何评价与我们的合作。",
+    "clientFor": "合作 {years}",
+    "quote1": "智远按时按预算交付了我们的 MVP。代码清晰、文档完善，我们已能自行扩展。",
+    "quote2": "我们需要能同时负责前后端的伙伴。智远理解我们的业务，交付了用户喜爱的产品。",
+    "quote3": "从需求到上线，过程透明。我们现在仍与同一团队合作，进行支持与新功能开发。",
+    "author1": "陈晓华",
+    "role1": "创始人，TechFlow",
+    "years1": "2 年",
+    "author2": "朴俊浩",
+    "role2": "CTO，RetailOS",
+    "years2": "1 年",
+    "author3": "Maria Santos",
+    "role3": "产品负责人，HealthHub",
+    "years3": "3 年"
+  },
+  "clientLogos": {
+    "heading": "深受产品团队与企业信赖"
+  },
+  "cta": {
+    "heading": "免费咨询，立即开始",
+    "subheading": "告诉我们您的项目。我们将在 24 小时内回复下一步——无需任何承诺。",
+    "getInTouch": "联系我们",
+    "viewServices": "查看服务"
+  },
+  "footer": {
+    "tagline": "可扩展的软件开发。Web、移动、API 与咨询。",
+    "services": "服务",
+    "company": "公司",
+    "resources": "资源",
+    "webApps": "Web 应用",
+    "mobileApps": "移动应用",
+    "apiIntegrations": "API 与集成",
+    "consulting": "咨询",
+    "about": "关于",
+    "careers": "招聘",
+    "contact": "联系",
+    "blog": "博客",
+    "caseStudies": "案例",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "copyright": "© {year} 智远。保留所有权利。"
+  },
+  "locale": {
+    "en": "English",
+    "zh": "中文"
+  }
+}

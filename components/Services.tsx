@@ -1,77 +1,46 @@
-import Link from "next/link";
+"use client";
 
-const services = [
-  {
-    title: "Web Applications",
-    description:
-      "Full-stack web apps with React, Next.js, and Node. From dashboards to e-commerce, we build fast, scalable products.",
-    href: "#contact",
-    cta: "Get a Quote",
-  },
-  {
-    title: "Mobile Apps",
-    description:
-      "Native and cross-platform mobile apps for iOS and Android. User-focused design and robust backend integration.",
-    href: "#contact",
-    cta: "Learn More",
-  },
-  {
-    title: "API & Integrations",
-    description:
-      "REST and GraphQL APIs, third-party integrations, and system-to-system connections. Secure and well-documented.",
-    href: "#contact",
-    cta: "Learn More",
-  },
-  {
-    title: "Technical Consulting",
-    description:
-      "Architecture reviews, tech due diligence, and roadmap planning. Get clarity before you build.",
-    href: "#contact",
-    cta: "Learn More",
-  },
-  {
-    title: "MVP & Prototypes",
-    description:
-      "Turn your idea into a working MVP in weeks. Validate with real users and iterate with confidence.",
-    href: "#contact",
-    cta: "Learn More",
-  },
-  {
-    title: "Maintenance & Support",
-    description:
-      "Ongoing support, security updates, and feature enhancements. Keep your product healthy and evolving.",
-    href: "#contact",
-    cta: "Learn More",
-  },
-];
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+
+const serviceKeys = [
+  { titleKey: "webTitle", descKey: "webDesc", ctaKey: "getQuote" as const },
+  { titleKey: "mobileTitle", descKey: "mobileDesc", ctaKey: "learnMore" as const },
+  { titleKey: "apiTitle", descKey: "apiDesc", ctaKey: "learnMore" as const },
+  { titleKey: "consultingTitle", descKey: "consultingDesc", ctaKey: "learnMore" as const },
+  { titleKey: "mvpTitle", descKey: "mvpDesc", ctaKey: "learnMore" as const },
+  { titleKey: "maintenanceTitle", descKey: "maintenanceDesc", ctaKey: "learnMore" as const },
+] as const;
 
 export default function Services() {
+  const t = useTranslations("services");
+
   return (
     <section id="services" className="py-20 lg:py-28 bg-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-            End-to-end software solutions
+            {t("heading")}
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
-            We bring together design, development, and delivery so you can ship faster and scale with confidence.
-          </p>
+          <p className="mt-4 text-lg text-slate-600">{t("subheading")}</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((s) => (
+          {serviceKeys.map((s) => (
             <div
-              key={s.title}
+              key={s.titleKey}
               className="group p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-primary-200 hover:shadow-lg hover:shadow-primary-500/5 transition-all"
             >
               <h3 className="text-xl font-semibold text-slate-900 group-hover:text-primary-600 transition-colors">
-                {s.title}
+                {t(s.titleKey)}
               </h3>
-              <p className="mt-3 text-slate-600 leading-relaxed">{s.description}</p>
+              <p className="mt-3 text-slate-600 leading-relaxed">
+                {t(s.descKey)}
+              </p>
               <Link
-                href={s.href}
+                href="#contact"
                 className="mt-5 inline-flex items-center font-medium text-primary-600 hover:text-primary-700"
               >
-                {s.cta}
+                {t(s.ctaKey)}
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>

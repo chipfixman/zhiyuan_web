@@ -1,17 +1,20 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
-
-const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#solutions", label: "Solutions" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#contact", label: "Contact" },
-];
+import { Link } from "@/i18n/navigation";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function Header() {
+  const t = useTranslations("nav");
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navLinks = [
+    { href: "#services", label: t("services") },
+    { href: "#solutions", label: t("solutions") },
+    { href: "#testimonials", label: t("testimonials") },
+    { href: "#contact", label: t("contact") },
+  ];
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
@@ -21,7 +24,7 @@ export default function Header() {
             Zhiyuan
           </Link>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -31,28 +34,32 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <LocaleSwitcher />
             <Link
               href="#contact"
               className="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors"
             >
-              Start a Project
+              {t("startProject")}
             </Link>
           </div>
 
-          <button
-            type="button"
-            className="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {mobileOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+          <div className="flex md:hidden items-center gap-2">
+            <LocaleSwitcher />
+            <button
+              type="button"
+              className="p-2 rounded-lg text-slate-600 hover:bg-slate-100"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label={t("toggleMenu")}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {mobileOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
         {mobileOpen && (
@@ -73,7 +80,7 @@ export default function Header() {
                 className="mx-4 mt-2 inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-primary-600 text-white font-medium"
                 onClick={() => setMobileOpen(false)}
               >
-                Start a Project
+                {t("startProject")}
               </Link>
             </div>
           </div>

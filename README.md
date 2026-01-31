@@ -7,6 +7,8 @@ A marketing website for a software development business, built with **Next.js 14
 - **Next.js 14** (App Router)
 - **Tailwind CSS** for styling
 - **TypeScript**
+- **i18n** – English and Chinese (中文) via [next-intl](https://next-intl.dev)
+- **Language switch** in the navbar (English / 中文)
 - Responsive layout with mobile navigation
 - Sections: Hero, Value Props, Features, Services, Solutions, Testimonials, Client Logos, CTA, Footer
 
@@ -24,7 +26,7 @@ A marketing website for a software development business, built with **Next.js 14
    npm run dev
    ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser. You’ll be redirected to `/en` or your preferred locale. Use `/en` for English and `/zh` for 中文.
 
 ## Scripts
 
@@ -39,3 +41,4 @@ A marketing website for a software development business, built with **Next.js 14
 - **Contact email**: Update `hello@zhiyuan.dev` in `components/CTA.tsx` and `components/Footer.tsx`.
 - **Colors**: Edit `tailwind.config.ts` and `app/globals.css` for primary/accent colors.
 - **Content**: Edit copy in each component under `components/`.
+- **Translations**: Edit `messages/en.json` and `messages/zh.json`. Add or change keys and use `useTranslations('namespace')` or `t('key')` in components.

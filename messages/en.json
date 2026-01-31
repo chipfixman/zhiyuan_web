@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "services": "Services",
+    "solutions": "Solutions",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "startProject": "Start a Project",
+    "toggleMenu": "Toggle menu"
+  },
+  "hero": {
+    "badge": "Software Development",
+    "title": "Skip the hassle of the ordinary.",
+    "specs": "Product specs.",
+    "code": "Clean code.",
+    "delivery": "On-time delivery.",
+    "subtitle": "Jumpstart your product. We build web and mobile apps that scale—so you can focus on your business.",
+    "startProject": "Start a Project",
+    "seeWork": "See Our Work"
+  },
+  "valueProps": {
+    "heading": "One team. End-to-end delivery.",
+    "subheading": "We help startups and enterprises build software with minimal friction and optimal results.",
+    "time": "Time",
+    "timeDesc": "Ship faster with proven processes and reusable architecture. We cut through complexity so you hit the market sooner.",
+    "quality": "Quality",
+    "qualityDesc": "Clean, maintainable code and solid testing. We build for the long term so your product stays reliable as it grows.",
+    "partnership": "Partnership",
+    "partnershipDesc": "Work with a team that understands your goals. Clear communication, transparent timelines, and no surprises."
+  },
+  "features": {
+    "heading": "Build with one team, one process",
+    "subheading": "From concept to deployment, we bring your product to life with modern tools and clear communication.",
+    "ideaTitle": "From idea to production, in one place",
+    "ideaDesc": "We handle requirements, design, development, and deployment. Our process turns your brief into a live product—no juggling multiple vendors.",
+    "stackTitle": "Modern stack, future-proof code",
+    "stackDesc": "React, Next.js, Node, TypeScript, and cloud-native infra. We use tools that scale and stay maintainable so you're not stuck with legacy tech.",
+    "transparentTitle": "Transparent timelines and scope",
+    "transparentDesc": "Clear milestones, regular demos, and fixed-scope options where it fits. You always know what's built, what's next, and when it ships.",
+    "supportTitle": "Support and iteration after launch",
+    "supportDesc": "Post-launch support, bug fixes, and feature iterations. We stay involved so your product keeps improving without starting from scratch."
+  },
+  "services": {
+    "heading": "End-to-end software solutions",
+    "subheading": "We bring together design, development, and delivery so you can ship faster and scale with confidence.",
+    "webTitle": "Web Applications",
+    "webDesc": "Full-stack web apps with React, Next.js, and Node. From dashboards to e-commerce, we build fast, scalable products.",
+    "mobileTitle": "Mobile Apps",
+    "mobileDesc": "Native and cross-platform mobile apps for iOS and Android. User-focused design and robust backend integration.",
+    "apiTitle": "API & Integrations",
+    "apiDesc": "REST and GraphQL APIs, third-party integrations, and system-to-system connections. Secure and well-documented.",
+    "consultingTitle": "Technical Consulting",
+    "consultingDesc": "Architecture reviews, tech due diligence, and roadmap planning. Get clarity before you build.",
+    "mvpTitle": "MVP & Prototypes",
+    "mvpDesc": "Turn your idea into a working MVP in weeks. Validate with real users and iterate with confidence.",
+    "maintenanceTitle": "Maintenance & Support",
+    "maintenanceDesc": "Ongoing support, security updates, and feature enhancements. Keep your product healthy and evolving.",
+    "getQuote": "Get a Quote",
+    "learnMore": "Learn More"
+  },
+  "solutions": {
+    "heading": "Built for how you work",
+    "subheading": "Whether you're a startup, a product team, or an enterprise, we adapt to your context and deliver.",
+    "startupsTitle": "Startups & MVPs",
+    "startupsDesc": "From idea to first release. We build MVPs and early products so you can validate and iterate fast.",
+    "teamsTitle": "Product Teams",
+    "teamsDesc": "Extend your team with senior engineers. We slot into your process and ship features on your stack.",
+    "enterpriseTitle": "Enterprises",
+    "enterpriseDesc": "Legacy modernization, integrations, and new products. We work with your security and compliance needs.",
+    "learnMore": "Learn more"
+  },
+  "testimonials": {
+    "heading": "Trusted by product teams",
+    "subheading": "See what founders and technical leads say about working with us.",
+    "clientFor": "Client for {years}",
+    "quote1": "Zhiyuan delivered our MVP on time and within budget. The codebase is clean and well-documented—we've been able to extend it ourselves.",
+    "quote2": "We needed a partner who could handle both frontend and backend. Zhiyuan understood our domain and shipped a product our users love.",
+    "quote3": "From requirements to deployment, the process was transparent. We're now scaling with the same team for support and new features.",
+    "author1": "Sarah Chen",
+    "role1": "Founder, TechFlow",
+    "years1": "2 years",
+    "author2": "James Park",
+    "role2": "CTO, RetailOS",
+    "years2": "1 year",
+    "author3": "Maria Santos",
+    "role3": "Product Lead, HealthHub",
+    "years3": "3 years"
+  },
+  "clientLogos": {
+    "heading": "Trusted by product teams and enterprises"
+  },
+  "cta": {
+    "heading": "Get started with a free consultation",
+    "subheading": "Tell us about your project. We'll reply within 24 hours with next steps—no commitment required.",
+    "getInTouch": "Get in Touch",
+    "viewServices": "View Services"
+  },
+  "footer": {
+    "tagline": "Software development that scales. Web, mobile, APIs, and consulting.",
+    "services": "Services",
+    "company": "Company",
+    "resources": "Resources",
+    "webApps": "Web Applications",
+    "mobileApps": "Mobile Apps",
+    "apiIntegrations": "API & Integrations",
+    "consulting": "Consulting",
+    "about": "About",
+    "careers": "Careers",
+    "contact": "Contact",
+    "blog": "Blog",
+    "caseStudies": "Case Studies",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "copyright": "© {year} Zhiyuan. All rights reserved."
+  },
+  "locale": {
+    "en": "English",
+    "zh": "中文"
+  }
+}
